@@ -247,40 +247,40 @@ body {
 /*********************/
 
 .section-offer {
-  margin-bottom: 12rem;
+  margin-bottom: 20rem;
 }
 
 .offer {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   gap: 1rem;
+  justify-content: space-between;
 }
 
 .offer__left {
-  width: 30%;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   gap: 2rem;
+  justify-content: center;
+  width: 30%;
 }
 
 .offer__middle {
-  width: 30%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  width: 30%;
 }
 
 .offer__right {
-  width: 30%;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
   gap: 2rem;
+  justify-content: center;
+  width: 30%;
 }
 
 .offer-heading {
@@ -302,10 +302,10 @@ body {
 }
 
 .offer__image {
-  max-width: 35rem;
-  outline: 2rem solid red;
-  outline-offset: 3rem;
   border-radius: 100%;
+  max-width: 35rem;
+  outline-offset: 3rem;
+  outline: 2rem solid red;
 }
 
 .offer__heading-right {
@@ -317,4 +317,92 @@ body {
 
 .offer__icon {
   max-width: 14rem;
+}
+
+/*********************/
+/* Holiday Section */
+/*********************/
+
+.section-holiday {
+  margin-bottom: 12rem;
+}
+
+.holiday__content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 10rem;
+  text-align: center;
+}
+
+.holiday-heading {
+  font-family: var(--merriweather);
+  font-size: 7.2rem;
+  font-weight: 900;
+}
+
+.holiday-heading--colored {
+  color: var(--color-red);
+}
+
+.holiday-heading-supporting {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.holiday__paragraph {
+  font-weight: 500;
+  line-height: 3.2rem;
+  max-width: 100rem;
+}
+
+.holiday-banner {
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.holiday-banner__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.holiday-banner__top-left {
+  position: relative;
+  width: 60%;
+}
+
+.holiday-banner__top-left img {
+  border-radius: 100%;
+  border: 1.5rem solid var(--color-white);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(50%, -50%);
+  width: 30%;
+}
+
+.holiday-banner__top-right {
+  display: flex;
+  width: 40%;
+}
+
+.holiday-banner__top-right img {
+  width: 100%;
+}
+
+.holiday-banner__bottom {
+  background-color: var(--color-red);
+  height: 24rem;
+  position: relative;
+  width: 100%;
+}
+
+.holiday-banner__bottom img {
+  left: 10rem;
+  position: absolute;
+  top: -25rem;
+  width: 50rem;
 }
