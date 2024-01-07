@@ -1,9 +1,25 @@
+/* Importing Font */
+/*********************/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;900&display=swap");
+
+/* Root Variables */
+/*********************/
+
+:root {
+  --color-body--dark: rgba(7, 2, 17, 0.6);
+  --color-white: #fff;
+}
+
+/* Basic Styles */
+/*********************/
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -11,5 +27,47 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  color: var(--color-body--dark);
+  background-color: var(--color-white);
+}
+
+.section-header {
+}
+
+.container {
+  max-width: 132rem;
+  margin: 0 auto;
+}
+
+.hero {
+  background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+    url("../images/banner-image.png");
+  background-size: cover;
+  margin-top: 5rem;
+  height: 60rem;
+  border-radius: 1.6rem;
+  font-family: "Merriweather", serif;
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 0rem;
+}
+
+.heading-primary {
+  font-size: 7.2rem;
+  font-weight: 900;
+  max-width: 63rem;
+  text-transform: capitalize;
+  line-height: 9.5rem;
+}
+
+.heading-sub {
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 400;
 }
