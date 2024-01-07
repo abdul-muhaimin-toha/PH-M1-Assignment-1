@@ -41,6 +41,7 @@ body {
   font-family: var(--inter);
   font-size: 2rem;
   line-height: 1.5;
+  font-weight: 500;
 }
 
 /*********************/
@@ -139,7 +140,7 @@ body {
 .banner__category-title--sub {
   color: var(--color-red);
   font-size: 2.4rem;
-  font-weight: 500;
+
   margin-bottom: 0.8rem;
 }
 .banner__image {
@@ -225,11 +226,11 @@ body {
 }
 
 .event__text-box {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   gap: 2rem;
+  justify-content: center;
 }
 
 .event__text {
@@ -239,4 +240,81 @@ body {
 
 .event__text--colored {
   color: var(--color-red);
+}
+
+/*********************/
+/* Offer Section */
+/*********************/
+
+.section-offer {
+  margin-bottom: 12rem;
+}
+
+.offer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.offer__left {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.offer__middle {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer__right {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.offer-heading {
+  font-family: var(--merriweather);
+  font-size: 4.8rem;
+  font-weight: 900;
+  text-transform: capitalize;
+}
+
+.offer-heading-supporting {
+  color: #f00;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.offer__paragraph {
+  font-weight: 400;
+  line-height: 3.2rem;
+}
+
+.offer__image {
+  max-width: 35rem;
+  outline: 2rem solid red;
+  outline-offset: 3rem;
+  border-radius: 100%;
+}
+
+.offer__heading-right {
+  color: var(--color-red);
+  font-size: 4.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.offer__icon {
+  max-width: 14rem;
 }
