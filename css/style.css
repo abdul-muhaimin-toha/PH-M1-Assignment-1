@@ -10,8 +10,12 @@
 
 :root {
   --color-body--dark: #070211;
+  --color-body--light: #ffffffcc;
   --color-red: #f00;
   --color-white: #ffffff;
+
+  --merriweather: "Merriweather", serif;
+  --inter: "Inter", sans-serif;
 }
 
 /*********************/
@@ -34,7 +38,7 @@ body {
   background-color: var(--color-white);
   box-sizing: border-box;
   color: var(--color-body--dark);
-  font-family: "Inter", sans-serif;
+  font-family: var(--inter);
   font-size: 2rem;
   line-height: 1.5;
 }
@@ -122,4 +126,74 @@ body {
 }
 .banner__image {
   max-width: 80rem;
+}
+
+/*********************/
+/* Welcome Section */
+/*********************/
+
+.section-welcome {
+  margin-bottom: 12rem;
+}
+
+.welcome {
+  background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0) 100%),
+    url("../images/welcome-bg.png");
+  align-items: center;
+  background-size: cover;
+  border-radius: 1.6rem;
+  display: flex;
+  gap: 3rem;
+  height: 60rem;
+  justify-content: space-between;
+  padding: 7rem 13rem;
+}
+
+.welcome__content {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.heading-secondary {
+  color: var(--color-white);
+  font-family: var(--merriweather);
+  font-size: 6.4rem;
+  letter-spacing: 0.704rem;
+  line-height: 8.8rem;
+  max-width: 65rem;
+}
+.welcome__paragraph {
+  color: var(--color-body--light);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+.welcome__btn:link,
+.welcome__btn:visited {
+  background-color: var(--color-white);
+  border-radius: 30px;
+  color: var(--color-red);
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.welcome__btn:hover,
+.welcome__btn:active {
+  background-color: var(--color-red);
+  color: var(--color-white);
+}
+
+.welcome__image-box {
+  min-width: 23%;
+}
+
+.welcome__image {
+  width: 100%;
 }
