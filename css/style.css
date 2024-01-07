@@ -427,9 +427,9 @@ body {
 
 .portfolio__gallery {
   display: grid;
+  grid-gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 3rem;
   margin-top: 10rem;
 }
 .portfolio__gallery img {
@@ -438,6 +438,53 @@ body {
 }
 
 .portfolio__gallery img:hover {
-  transform: scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transform: scale(1.05);
+}
+
+/*********************/
+/* Newsletter Section */
+/*********************/
+
+.section-newsletter {
+  margin-bottom: 12rem;
+}
+
+.newsletter {
+  align-items: center;
+  background: rgba(255, 0, 0, 0.05);
+  border-radius: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  padding: 10rem;
+  text-align: center;
+}
+
+.newsletter__paragraph {
+  margin-bottom: 4rem;
+  width: 90rem;
+}
+
+.newsletter__email-field {
+  border-radius: 5rem 0 0 5rem;
+  border: 0;
+  color: rgba(7, 2, 17, 0.3);
+  font-size: 1.8rem;
+  font-weight: 400;
+  outline: 0;
+  padding: 2.5rem 5rem;
+  width: 60rem;
+}
+
+.newsletter__btn {
+  background-color: var(--color-red);
+  border-radius: 0 5rem 5rem 0;
+  border: 0;
+  color: #fff;
+  font-weight: 600;
+  outline: 0;
+  padding: 2.5rem 5rem;
+  text-transform: uppercase;
 }
